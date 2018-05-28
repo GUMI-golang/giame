@@ -1,0 +1,63 @@
+#version 430
+
+#define CLOSETOZERO 0.00001
+#define MAXUINT16 65535
+
+layout(r32i, binding = 0) uniform iimage2D ioutput;
+layout (std430, binding = 1) buffer readonly Points {
+    vec2 points[];
+};
+layout (local_size_x = 1, local_size_y = 1) in;
+
+int iclamp(int a, int min, int max);
+
+void main() {
+    vec2 from, to, tempv2;
+    from = points[gl_GlobalInvocationID.x];
+    to =  points[(gl_GlobalInvocationID.x + 1)];
+    if (isnan(from.x )|| isnan(to.x)){
+        return;
+    }
+    float dir = 1;
+    if (from.y > to.y){
+        dir = -1;
+        tempv2 = from;
+        from = to;
+        to = tempv2;
+    }
+    if(to.y - from.y < CLOSETOZERO) {
+        return;
+    }
+    tempv2 = (to - from);
+    float deltaXY = tempv2.x / tempv2.y;
+    float xCurr = from.x;
+    int yFrom = int(floor(from.y));
+    int yTo = int(floor(to.y));
+    //
+    for(int y = yFrom; y < yTo;y++){
+        float deltaY = min(float(y + 1), to.y) - max(float(y), from.y);
+        float xNext = xCurr + deltaY * deltaXY;
+        float x0 = min(xCurr, xNext), x1 = max(xCurr, xNext);
+        float innerdydx = 1/(x1 - x0);
+        int start = int(round(x0));
+        int end = int(round(x1));
+        int n = end - start + 1;
+        float sum = float(n * (n + 1) / 2);
+        if (dir >= 0){
+            for(int x = start; x <= end;x++){
+                ivec2 size = imageSize(ioutput);
+                imageAtomicAdd(ioutput, ivec2(iclamp(x, 0, size.x), iclamp(y, 0, size.y)), int((float(end - x + 1) / sum)*dir * MAXUINT16));
+            }
+        }else{
+            for(int x = start; x <= end;x++){
+                ivec2 size = imageSize(ioutput);
+                imageAtomicAdd(ioutput, ivec2(iclamp(x, 0, size.x), iclamp(y, 0, size.y)), int((float(x - start + 1) / sum)*dir * MAXUINT16));
+            }
+        }
+
+        xCurr = xNext;
+    }
+ }
+int iclamp(int a, int imin, int imax){
+    return min(max(a, imin), imax);
+}
