@@ -1,33 +1,29 @@
 package main
 
 import (
-	"os"
-	"image/png"
-	"github.com/GUMI-golang/giame/tools/mask"
-	"github.com/GUMI-golang/giame/tools"
-	"github.com/GUMI-golang/gumi/gcore"
+	"github.com/GUMI-golang/giame/giamesoft"
+	"github.com/GUMI-golang/giame"
 	"image"
-	"golang.org/x/image/draw"
+	"github.com/go-gl/mathgl/mgl32"
+	"github.com/GUMI-golang/gumi/gcore"
 )
 
 func main() {
-
-	f, err := os.Open("./example/jellybeans.png")
-	if err != nil {
-		panic(err)
-	}
-	defer f.Close()
-	img, err := png.Decode(f)
-	if err != nil {
-		panic(err)
-	}
-	dst := image.NewRGBA(img.Bounds())
-	for _, s := range []mask.Mask3{
-		mask.Laplacian,
-		mask.LaplacianExtend,
-	}{
-		draw.Draw(dst, dst.Rect, img, img.Bounds().Min, draw.Src)
-		tools.Filting(s, dst)
-		gcore.Capture("_out_" + s.Strings(), dst)
-	}
+	giamesoft.Driver.Init()
+	defer giamesoft.Driver.Close()
+	//
+	f := giame.NewFiller(giame.FillerTypeBilinear, gcore.MustValue(gcore.Load("example/jellybeans.png")).(image.Image))
+	//
+	r := giamesoft.Driver.MakeResult(128, 128)
+	q := giame.NewQuary(image.Rect(32, 0, 96, 64), giame.SetupScanlineHorizontal)
+	q.SetFiller(f)
+	c := q.Fill(func(query *giame.FillQuery) {
+		query.MoveTo(mgl32.Vec2{0,0})
+		query.LineTo(mgl32.Vec2{64,0})
+		query.LineTo(mgl32.Vec2{64,64})
+		query.LineTo(mgl32.Vec2{0,64})
+		query.CloseTo()
+	})
+	r.Request(giamesoft.Driver, c)
+	gcore.Capture("cpu-fill", r.Image())
 }

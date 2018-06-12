@@ -7,24 +7,16 @@ import (
 	"github.com/pkg/errors"
 )
 
+var Driver = new(GLDriver)
+
 type GLDriver struct {
-	pathLineProgram uint32
-	pathFillProgram uint32
-	//
-	pipeDownProgram   uint32
-	pipeFilt33Program uint32
-	pipeFilt55Program uint32
+	prScanlineHorizontal uint32
 	//
 	raster [giame.FillerTypeLength]uint32
 	//
 	utilMixing   uint32
 	//
 	isInit bool
-}
-
-
-func NewDriver() *GLDriver {
-	return new(GLDriver)
 }
 func (GLDriver) MakeResult(w, h int) giame.Result {
 	var temp uint32
@@ -42,160 +34,32 @@ func (s *GLDriver) Init() (err error) {
 		return errors.New("Already init")
 	}
 	// path init
-	s.pathLineProgram, err = compile(string(shaders.MustAsset("Path0_Line.cs.glsl")))
+	s.prScanlineHorizontal, err = compile(string(shaders.MustAsset("PR-Scanline-horizontal.glsl")))
 	defer func() {
-		if err != nil && s.pathLineProgram != 0{
-			gl.DeleteProgram(s.pathLineProgram)
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.pathFillProgram, err = compile(string(shaders.MustAsset("Path1_Fill.cs.glsl")))
-	defer func() {
-		if err != nil && s.pathFillProgram != 0{
-			gl.DeleteProgram(s.pathFillProgram)
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	// pipe init
-	s.pipeDownProgram, err = compile(string(shaders.MustAsset("Pipe0_Downscale.cs.glsl")))
-	defer func() {
-		if err != nil && s.pipeDownProgram != 0{
-			gl.DeleteProgram(s.pipeDownProgram)
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.pipeFilt33Program, err = compile(string(shaders.MustAsset("Pipe1_Filter3x3.cs.glsl")))
-	defer func() {
-		if err != nil && s.pipeFilt33Program != 0{
-			gl.DeleteProgram(s.pipeFilt33Program)
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.pipeFilt55Program, err = compile(string(shaders.MustAsset("Pipe1_Filter5x5.cs.glsl")))
-	defer func() {
-		if err != nil && s.pipeFilt55Program != 0{
-			gl.DeleteProgram(s.pipeFilt55Program)
+		if err != nil && s.prScanlineHorizontal != 0{
+			gl.DeleteProgram(s.prScanlineHorizontal)
 		}
 	}()
 	if err != nil {
 		return err
 	}
 	// raster init
-	s.raster[giame.FillerTypeUniform], err = compile(string(shaders.MustAsset("Raster_Uniform.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeUniform] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeUniform])
+	for k, v := range ass {
+		if vstr, ok := v.(string);ok{
+			s.raster[k], err = compile(string(shaders.MustAsset(vstr)))
+			defer func(to uint32) {
+				if err != nil && to != 0{
+					gl.DeleteProgram(to)
+				}
+			}(s.raster[k])
+			if err != nil {
+				return err
+			}
+		}else {
+			s.raster[k] = s.raster[v.(giame.FillerType)]
 		}
-	}()
-	if err != nil {
-		return err
 	}
-
-	s.raster[giame.FillerTypeFixed], err = compile(string(shaders.MustAsset("Raster_Fixed.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeFixed] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeFixed])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-
-	// Kernel Using
-	s.raster[giame.FillerTypeNearestNeighbor], err = compile(string(shaders.MustAsset("Raster_Kernel_NearestNeighbor.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeNearestNeighbor] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeNearestNeighbor])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeBilinear], err = compile(string(shaders.MustAsset("Raster_Kernel_Bilinear.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeBilinear] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeBilinear])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeBell], err = compile(string(shaders.MustAsset("Raster_Kernel_Bell.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeBell] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeBell])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeHermite], err = compile(string(shaders.MustAsset("Raster_Kernel_Hermite.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeHermite] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeHermite])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeBicubicHalf], err = compile(string(shaders.MustAsset("Raster_Kernel_BicubicHalf.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeBicubicHalf] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeBicubicHalf])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeMitchellOneThird], err = compile(string(shaders.MustAsset("Raster_Kernel_MitchellOneThird.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeMitchellOneThird] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeMitchellOneThird])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeLanczos2], err = compile(string(shaders.MustAsset("Raster_Kernel_Lanczos2.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeLanczos2] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeLanczos2])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeLanczos3], err = compile(string(shaders.MustAsset("Raster_Kernel_Lanczos3.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeLanczos3] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeLanczos3])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-
-	s.raster[giame.FillerTypeRepeat], err = compile(string(shaders.MustAsset("Raster_Repeat.cs.glsl")))
-	defer func() {
-		if err != nil && s.raster[giame.FillerTypeRepeat] != 0{
-			gl.DeleteProgram(s.raster[giame.FillerTypeRepeat])
-		}
-	}()
-	if err != nil {
-		return err
-	}
-	s.raster[giame.FillerTypeRepeatHorizontal] = s.raster[giame.FillerTypeRepeat]
-	s.raster[giame.FillerTypeRepeatVertical] = s.raster[giame.FillerTypeRepeat]
 	// util init
-
 	s.utilMixing, err = compile(string(shaders.MustAsset("util-Mixing.cs.glsl")))
 	defer func() {
 		if err != nil && s.utilMixing != 0{
@@ -215,10 +79,32 @@ func (s *GLDriver) Close() error {
 	if !s.isInit {
 		return errors.New("Not Inited")
 	}
-	gl.DeleteProgram(s.pathLineProgram)
-	gl.DeleteProgram(s.pathFillProgram)
-	for j := giame.FillerType(0); j < giame.FillerTypeLength; j++ {
-		gl.DeleteProgram(s.raster[j])
+	gl.DeleteProgram(s.prScanlineHorizontal)
+	for k, v := range ass {
+		if _, ok := v.(string); ok{
+			gl.DeleteProgram(s.raster[k])
+		}
 	}
+	gl.DeleteProgram(s.utilMixing)
 	return nil
+}
+
+
+var ass = map[giame.FillerType]interface{}{
+	giame.FillerTypeUniform : "RS_Uniform.cs.glsl",
+	//
+	giame.FillerTypeFixed : "RS_Fixed.cs.glsl",
+	//
+	giame.FillerTypeNearestNeighbor : "RS_Kernel_NearestNeighbor.cs.glsl",
+	giame.FillerTypeBilinear : "RS_Kernel_Bilinear.cs.glsl",
+	giame.FillerTypeBell : "RS_Kernel_Bell.cs.glsl",
+	giame.FillerTypeBicubicHalf : "RS_Kernel_BicubicHalf.cs.glsl",
+	giame.FillerTypeHermite : "RS_Kernel_Hermite.cs.glsl",
+	giame.FillerTypeMitchellOneThird : "RS_Kernel_MitchellOneThird.cs.glsl",
+	giame.FillerTypeLanczos2 : "RS_Kernel_Lanczos2.cs.glsl",
+	giame.FillerTypeLanczos3 : "RS_Kernel_Lanczos3.cs.glsl",
+	//
+	giame.FillerTypeRepeat: "RS_Repeat.cs.glsl",
+	giame.FillerTypeRepeatVertical: giame.FillerTypeRepeat,
+	giame.FillerTypeRepeatHorizontal: giame.FillerTypeRepeat,
 }

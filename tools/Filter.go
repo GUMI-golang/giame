@@ -1,7 +1,7 @@
 package tools
 
 import (
-	"github.com/GUMI-golang/giame/tools/mask"
+	"github.com/GUMI-golang/giame/tools/filter"
 	"image/draw"
 	"image"
 	"image/color"
@@ -9,15 +9,15 @@ import (
 )
 
 type Filter struct {
-	s mask.Mask3
+	s filter.Filter3
 }
 
-func NewFilter(s mask.Mask3) *Filter {
+func NewFilter(s filter.Filter3) *Filter {
 	return &Filter{
 		s:s,
 	}
 }
-func Filting(s mask.Mask3, dst draw.Image) {
+func Filting(s filter.Filter3, dst draw.Image) {
 	NewFilter(s).Filt(dst)
 }
 
@@ -29,13 +29,13 @@ func (s Filter) Filt(dst draw.Image) {
 		filterImage(dst, s.s)
 	}
 }
-func filterImage(dst draw.Image, s mask.Mask3){
+func filterImage(dst draw.Image, s filter.Filter3){
 	bd := dst.Bounds()
 	w, h := s.Size()
 	hw, hh := w/2, h/2
 	for x := bd.Min.X; x < bd.Max.X; x++ {
 		for y := bd.Min.Y; y < bd.Max.Y; y++ {
-			var r, g, b, a float64
+			var r, g, b, a float32
 			//
 			for i := 0; i < w; i++{
 				for j := 0; j < h; j++{
@@ -43,10 +43,10 @@ func filterImage(dst draw.Image, s mask.Mask3){
 					fromy := Iclamp(y + j - hh, bd.Min.Y, bd.Max.Y - 1)
 					tempr,tempg,tempb,tempa := dst.At(fromx, fromy).RGBA()
 					val := s.Data[j][i]
-					r += float64(tempr) * val
-					g += float64(tempg) * val
-					b += float64(tempb) * val
-					a += float64(tempa) * val
+					r += float32(tempr) * val
+					g += float32(tempg) * val
+					b += float32(tempb) * val
+					a += float32(tempa) * val
 				}
 			}
 			//
@@ -59,13 +59,13 @@ func filterImage(dst draw.Image, s mask.Mask3){
 		}
 	}
 }
-func filterRGBA(dst *image.RGBA, s mask.Mask3){
+func filterRGBA(dst *image.RGBA, s filter.Filter3){
 	bd := dst.Bounds()
 	w, h := s.Size()
 	hw, hh := w/2, h/2
 	for x := bd.Min.X; x < bd.Max.X; x++ {
 		for y := bd.Min.Y; y < bd.Max.Y; y++ {
-			var r, g, b, a float64
+			var r, g, b, a float32
 			//
 			for i := 0; i < w; i++{
 				for j := 0; j < h; j++{
@@ -74,10 +74,10 @@ func filterRGBA(dst *image.RGBA, s mask.Mask3){
 					//
 					off := dst.PixOffset(fromx, fromy)
 					val := s.Data[j][i]
-					r += float64(dst.Pix[off + 0]) * val
-					g += float64(dst.Pix[off + 1]) * val
-					b += float64(dst.Pix[off + 2]) * val
-					a += float64(dst.Pix[off + 3]) * val
+					r += float32(dst.Pix[off + 0]) * val
+					g += float32(dst.Pix[off + 1]) * val
+					b += float32(dst.Pix[off + 2]) * val
+					a += float32(dst.Pix[off + 3]) * val
 				}
 			}
 			//

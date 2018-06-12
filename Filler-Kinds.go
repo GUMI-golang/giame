@@ -28,9 +28,9 @@ type (
 		Width, Height int
 	}
 	RepeatFiller struct {
-		Type FillerType
 		Data          []uint8
 		Width, Height int
+		RepeaterWidth, RepeaterHeight int
 	}
 	KernelFiller struct {
 		Data          []uint8
@@ -131,15 +131,7 @@ func (s *RepeatFiller) Bounds() image.Rectangle {
 	return image.Rect(0, 0, s.Width, s.Height)
 }
 func (s *RepeatFiller) At(x, y int) color.Color {
-	var o int
-	switch s.Type {
-	case FillerTypeRepeatHorizontal:
-		o = offset(x%s.Width, y, s.Width)
-	case FillerTypeRepeatVertical:
-		o = offset(x, y%s.Height, s.Width)
-	default:
-		o = offset(x%s.Width, y%s.Height, s.Width)
-	}
+	var o = offset(x%s.RepeaterWidth, y%s.RepeaterHeight, s.Width)
 
 	return color.RGBA{
 		R: s.Data[o+R],

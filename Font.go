@@ -70,18 +70,15 @@ func (s *VectorFont) SetHint(hint font.Hinting) {
 	s.hint = hint
 }
 //
-func (s *VectorFont) Text(cq *ContourQuary, text string, point mgl32.Vec2, align gcore.Align) *Contour {
-	point = point.Mul(cq.GetScale().Sqrt())
-	expectSize := s.MeasureText(cq, text).Mul(cq.GetScale().Sqrt())
+func (s *VectorFont) Text(cq InnerQuery, text string, point mgl32.Vec2, align gcore.Align)  {
 	s.drawText(
 		cq,
 		text,
-		alignHelp(align, point, expectSize),
+		alignHelp(align, point, s.MeasureText(text)),
 	)
-	res := cq.Fill()
-	return res
+	return
 }
-func (s *VectorFont) TextInRect(cq *ContourQuary , text string, rect image.Rectangle, align gcore.Align) *Contour {
+func (s *VectorFont) TextInRect(cq InnerQuery, text string, rect image.Rectangle, align gcore.Align) {
 	v, h := gcore.SplitAlign(align)
 
 	var pt mgl32.Vec2
@@ -102,39 +99,37 @@ func (s *VectorFont) TextInRect(cq *ContourQuary , text string, rect image.Recta
 	case gcore.AlignRight:
 		pt[0] = float32(rect.Min.X) + float32(rect.Dx())
 	}
-	return s.Text(cq, text, pt, align)
+	s.Text(cq, text, pt, align)
 }
-func (s *VectorFont) MeasureText(cq *ContourQuary, text string) (res mgl32.Vec2) {
+func (s *VectorFont) MeasureText(text string) (res mgl32.Vec2) {
 	var previdx truetype.Index = 0
 	for i, r := range []rune(text) {
 		idx := s.f.Index(r)
-		scale := utilScale(s.size, cq.GetScale().Sqrt())
 		if i > 0 {
-			res[0] += Fint32ToFloat32(s.f.Kern( scale, previdx, idx))
+			res[0] += Fint32ToFloat32(s.f.Kern( s.size, previdx, idx))
 		}
 
-		hmat := s.f.HMetric(scale, idx)
+		hmat := s.f.HMetric(s.size, idx)
 		res[0] += Fint32ToFloat32(hmat.AdvanceWidth)
 		previdx = idx
 	}
-	res[0] /= cq.GetScale().Sqrt()
-	res[1] = s.MeasureHeight(cq)
+	res[1] = s.MeasureHeight()
 	return res
 }
-func (s *VectorFont) MeasureHeight(cq *ContourQuary) (float32) {
+func (s *VectorFont) MeasureHeight() (float32) {
 	return Fint32ToFloat32(s.size)
 }
 //
-func (s *VectorFont) drawText(cq *ContourQuary, text string, point mgl32.Vec2) {
+func (s *VectorFont) drawText(cq InnerQuery, text string, point mgl32.Vec2) {
 	var prevIdx truetype.Index = 0
 	for i, r := range []rune(text) {
 		idx := s.f.Index(r)
-		b, err := s.load(cq, idx)
+		b, err := s.load(idx)
 		if err != nil {
 			continue
 		}
 		if i > 0 {
-			point[0] += Fint32ToFloat32(s.f.Kern(utilScale(s.size, cq.GetScale().Sqrt()), prevIdx, idx))
+			point[0] += Fint32ToFloat32(s.f.Kern(s.size, prevIdx, idx))
 		}
 		temp := point
 		temp[1] += Fint32ToFloat32(b.Bounds.Min.Y)
@@ -144,14 +139,14 @@ func (s *VectorFont) drawText(cq *ContourQuary, text string, point mgl32.Vec2) {
 	}
 }
 const cachesize = 256
-func (s *VectorFont) load(cq *ContourQuary, i truetype.Index) (*truetype.GlyphBuf, error) {
+func (s *VectorFont) load(i truetype.Index) (*truetype.GlyphBuf, error) {
 	// Current
 	if c, ok := s.cachemap[i];ok{
 		s.cache.MoveToFront(c)
 		return c.Value.(cachehelp).b, nil
 	}
 	buf := &truetype.GlyphBuf{}
-	err := buf.Load(s.f, utilScale(s.size, cq.GetScale().Sqrt()), i, s.hint)
+	err := buf.Load(s.f, s.size, i, s.hint)
 	if err != nil {
 		return nil, err
 	}
@@ -173,7 +168,7 @@ func (s *VectorFont) load(cq *ContourQuary, i truetype.Index) (*truetype.GlyphBu
 	return buf, nil
 }
 
-func fontRaster(cq *ContourQuary, buf *truetype.GlyphBuf, point mgl32.Vec2) {
+func fontRaster(cq InnerQuery, buf *truetype.GlyphBuf, point mgl32.Vec2) {
 	var start int
 	for _, end := range buf.Ends {
 		fontContour(cq, buf.Points[start:end], point)
@@ -186,7 +181,7 @@ func Fint32ToFloat32(i fixed.Int26_6) float32 {
 func Float32ToFint32(f float32) fixed.Int26_6 {
 	return fixed.Int26_6(f * 0x40)
 }
-func fontContour(cq *ContourQuary, points []truetype.Point, point mgl32.Vec2) {
+func fontContour(cq InnerQuery, points []truetype.Point, point mgl32.Vec2) {
 	if len(points) == 0 {
 		return
 	}
@@ -216,7 +211,7 @@ func fontContour(cq *ContourQuary, points []truetype.Point, point mgl32.Vec2) {
 	//==================================
 	// drawloop
 	// start point
-	cq.RawMoveTo(first)
+	cq.MoveTo(first)
 	var q0, q0on = first, true
 	for i := ifirst; i < ilast; i++ {
 
@@ -228,20 +223,20 @@ func fontContour(cq *ContourQuary, points []truetype.Point, point mgl32.Vec2) {
 		}, p.Flags&0x01 != 0
 		if qon {
 			if q0on {
-				cq.RawLineTo(q)
+				cq.LineTo(q)
 			} else {
-				cq.RawQuadTo(q0, q)
+				cq.QuadTo(q0, q)
 			}
 		} else {
 			if !q0on {
-				cq.RawQuadTo(q0, q0.Add(q).Mul(0.5))
+				cq.QuadTo(q0, q0.Add(q).Mul(0.5))
 			}
 		}
 		q0, q0on = q, qon
 	}
 	if q0on {
 	} else {
-		cq.RawQuadTo(q0, first)
+		cq.QuadTo(q0, first)
 	}
 	cq.CloseTo()
 
@@ -265,7 +260,4 @@ func alignHelp(align gcore.Align, point, size mgl32.Vec2) (res mgl32.Vec2) {
 		res[0] = point[0] - size[0]
 	}
 	return
-}
-func utilScale(sz fixed.Int26_6, mul float32) fixed.Int26_6 {
-	return Float32ToFint32(Fint32ToFloat32(sz) * mul)
 }

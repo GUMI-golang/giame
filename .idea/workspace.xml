@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c7b96bb-1e1d-40dc-acb5-12e9cd02ed86" name="Default" comment="" />
+    <list default="true" id="1c7b96bb-1e1d-40dc-acb5-12e9cd02ed86" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Contour-Infomation.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contour-Raw.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contour-ScanlineHorizontal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contour-ScanlineVertical.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contour-Util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Query-Fill.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Query-Kinds.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Query-Options.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex/example/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamegl/shaders/PR-Scanline-horizontal.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamegl/shaders/_old/Path0_Line_Simple.cs.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamesoft/DST_Filler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamesoft/WS-Filter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamesoft/WS-Raster-ContourHorizontal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/giamesoft/Workspace.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/filter/Blur.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/filter/New.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/svg/Error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/svg/Parser-Util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/svg/Path-Define.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/svg/Path-Handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/svg/Path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/giame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/giame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contour.go" beforeDir="false" afterPath="$PROJECT_DIR$/Contour.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContourQuery-SVGPath.go" beforeDir="false" afterPath="$PROJECT_DIR$/Query-SVGPath.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContourQuery.go" beforeDir="false" afterPath="$PROJECT_DIR$/Query.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filler-Kinds.go" beforeDir="false" afterPath="$PROJECT_DIR$/Filler-Kinds.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fillers.go" beforeDir="false" afterPath="$PROJECT_DIR$/Filler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Font.go" beforeDir="false" afterPath="$PROJECT_DIR$/Font.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RawFiller.go" beforeDir="false" afterPath="$PROJECT_DIR$/Filler-Serializer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrokeBuilder.go" beforeDir="false" afterPath="$PROJECT_DIR$/StrokeBuilder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/_out.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/ex0.go" beforeDir="false" afterPath="$PROJECT_DIR$/ex/ex0.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/ex1.go" beforeDir="false" afterPath="$PROJECT_DIR$/ex/ex1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/ex3.go" beforeDir="false" afterPath="$PROJECT_DIR$/ex/ex3.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Font16x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Font1x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Font2x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Font4x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Font8x.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex/example/Triangle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/giamegl43/Context.go" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/giamegl43/Context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/giamegl43/Result.go" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/giamegl43/Result.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/giamegl43/gl.go" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/giamegl43/gl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Path0_Line.cs.glsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Path1_Fill.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/_old/Path1_Fill.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Pipe0_Downscale.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/_old/Pipe0_Downscale.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Pipe1_Filter3x3.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/_old/Pipe1_Filter3x3.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Pipe1_Filter5x5.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/_old/Pipe1_Filter5x5.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Fixed.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Fixed.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bell.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Bell.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_BicubicHalf.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_BicubicHalf.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bilinear.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Bilinear.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Hermite.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Hermite.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos2.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Lanczos2.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos3.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Lanczos3.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_MitchellOneThird.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_MitchellOneThird.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_NearestNeighbor.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_NearestNeighbor.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Repeat.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Repeat.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/Raster_Uniform.cs.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/RS_Uniform.cs.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamegl/shaders/assets.go" beforeDir="false" afterPath="$PROJECT_DIR$/giamegl/shaders/assets.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giamesoft/software.go" beforeDir="false" afterPath="$PROJECT_DIR$/giamesoft/software.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pathtool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/Filter.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Filter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/mask/Mask.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/mask/Sharpening.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util-SerialReader.go" beforeDir="false" afterPath="$PROJECT_DIR$/tools/svg/Parser.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,8 +80,74 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="giame" />
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ex0.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ex/ex0.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contour-ScanlineVertical.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contour-ScanlineVertical.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#118#173#0" />
+                <element signature="n#!!block;n#ToContourVertical#0" />
+                <element signature="e#322#458#0" />
+                <element signature="e#404#421#0" />
+                <element signature="e#427#455#0" />
+                <element signature="e#579#672#0" />
+                <element signature="n#!!block;n#NewBuilderContourVertical#0" />
+                <element signature="e#769#946#0" />
+                <element signature="e#843#889#0" />
+                <element signature="n#!!block;n#Write#0" />
+                <element signature="e#1057#1099#0" />
+                <element signature="e#1209#1222#0" />
+                <element signature="e#1383#1664#0" />
+                <element signature="e#1439#1456#0" />
+                <element signature="e#1524#1541#0" />
+                <element signature="e#1568#1621#0" />
+                <element signature="e#1626#1660#0" />
+                <element signature="n#!!block;n#Build#0" />
+                <element signature="e#1887#1999#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contour-ScanlineHorizontal.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Contour-ScanlineHorizontal.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+              <folding>
+                <element signature="e#124#179#0" />
+                <element signature="n#!!block;n#ToContourHorizontal#0" />
+                <element signature="n#!!block;n#Build#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contour-Util.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contour-Util.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,19 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cq.GetScale()</find>
-      <find>ioutput</find>
-      <find>WSGSUPPORT</find>
-      <find>workspace</find>
-      <find>bound</find>
-      <find>errorchan</find>
-      <find>vts</find>
-      <find>`</find>
-      <find>ParseFloat</find>
-      <find>temp[i + 0]</find>
-      <find>memorysize</find>
-      <find>rot90</find>
-      <find>rotm90</find>
       <find>Encode</find>
       <find>RGBA64</find>
       <find>int(sv/2)</find>
@@ -45,13 +169,26 @@
       <find>BindTe</find>
       <find>GenTex</find>
       <find>a</find>
-      <find>fmt</find>
-      <find>fillbound</find>
       <find>FillerType = iota</find>
       <find>srcsz</find>
       <find>float32</find>
       <find>NewEn</find>
       <find>NewRGBA</find>
+      <find>iout</find>
+      <find>iclamp</find>
+      <find>src</find>
+      <find>workspace</find>
+      <find>TexImage2D</find>
+      <find>aa</find>
+      <find>*ContourQuary</find>
+      <find>cq</find>
+      <find>fmt</find>
+      <find>to</find>
+      <find>Is</find>
+      <find>fmt.Sprintf(&quot;%s : [%v]&quot;</find>
+      <find>gl_GlobalInvocationID.x</find>
+      <find>fillbound</find>
+      <find>Shades	Mix</find>
     </findStrings>
     <replaceStrings>
       <replace>SUPPORT</replace>
@@ -61,6 +198,9 @@
       <replace>eximax</replace>
       <replace>Do(x, y float64)</replace>
       <replace>:</replace>
+      <replace>InnerQuery</replace>
+      <replace>fmt.Sprintf(&quot;%s : %v&quot;</replace>
+      <replace>gl_GlobalInvocationID.y</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -70,57 +210,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tools/Resampler.go" />
-        <option value="$PROJECT_DIR$/tools/sampler/Sharpening.go" />
-        <option value="$PROJECT_DIR$/ex/ex2.go" />
-        <option value="$PROJECT_DIR$/tools/sampler/Sampler.go" />
-        <option value="$PROJECT_DIR$/tools/mask/Sampler.go" />
-        <option value="$PROJECT_DIR$/tools/mask/Msk.go" />
-        <option value="$PROJECT_DIR$/ex/ex3.go" />
-        <option value="$PROJECT_DIR$/tools/Filter.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/util-Scaler.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_Pipe_Downscale_NearestNeighbor.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_filter_Lapleras.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_filter.cs.glsl" />
-        <option value="$PROJECT_DIR$/tools/mask/Sharpening.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_Filter.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_Filter_3x3.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_Filter_5x5.cs.glsl" />
-        <option value="$PROJECT_DIR$/ContourQuery.go" />
-        <option value="$USER_HOME$/Downloads/Ghostscript_Tiger.svg" />
-        <option value="$PROJECT_DIR$/ContourDOM.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/gst_Raster_Uniform.cs.glsl" />
-        <option value="$PROJECT_DIR$/tools/kernel/inplements.go" />
-        <option value="$PROJECT_DIR$/tools/kernel/cases.go" />
-        <option value="$PROJECT_DIR$/tools/common.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Fixed.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Repeat.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/names.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_NearestNeighbor.glsl" />
-        <option value="$PROJECT_DIR$/Font.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Uniform.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Fixed.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bell.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_BicubicHalf.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bilinear.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Hermite.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos2.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos3.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_MitchellOneThird.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_NearestNeighbor.cs.glsl" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Repeat.cs.glsl" />
-        <option value="$PROJECT_DIR$/ex/ex0.go" />
-        <option value="$PROJECT_DIR$/giamegl/giamegl43/Context.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/Pipe1_Filter3x3.cs.glsl" />
-        <option value="$PROJECT_DIR$/Contour.go" />
-        <option value="$PROJECT_DIR$/tools/mask/Mask.go" />
-        <option value="$PROJECT_DIR$/Filler-Kinds.go" />
-        <option value="$PROJECT_DIR$/giamegl/giamegl43/Result.go" />
-        <option value="$PROJECT_DIR$/Fillers.go" />
-        <option value="$PROJECT_DIR$/RawFiller.go" />
-        <option value="$PROJECT_DIR$/giamegl/giamegl43/gl.go" />
-        <option value="$PROJECT_DIR$/giamegl/shaders/structs.go" />
+        <option value="$PROJECT_DIR$/Query.go" />
+        <option value="$PROJECT_DIR$/Query-Kinds.go" />
+        <option value="$PROJECT_DIR$/Options.go" />
+        <option value="$PROJECT_DIR$/Query-Options.go" />
+        <option value="$PROJECT_DIR$/pathtool.go" />
+        <option value="$PROJECT_DIR$/tools/svg/util-SerialReader.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Error.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Path-Define.go" />
+        <option value="$PROJECT_DIR$/ex/ex1.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Parser-Util.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Path.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Path-Handler.go" />
+        <option value="$PROJECT_DIR$/Query-SVGPath.go" />
+        <option value="$PROJECT_DIR$/tools/svg/Parser.go" />
+        <option value="$PROJECT_DIR$/Query-Fill.go" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/old/PR-Scanline-horizontal.glsl" />
+        <option value="$PROJECT_DIR$/Contour-Infomation.go" />
+        <option value="$PROJECT_DIR$/Contour-Horizontal.go" />
+        <option value="$PROJECT_DIR$/giamesoft/DST_Color.go" />
+        <option value="$PROJECT_DIR$/../gumi/gcore/util_capture.go" />
+        <option value="$PROJECT_DIR$/giamesoft/DST_Uniform.go" />
+        <option value="$PROJECT_DIR$/Interface.go" />
         <option value="$PROJECT_DIR$/giamesoft/software.go" />
+        <option value="$PROJECT_DIR$/ex/ex3.go" />
+        <option value="$PROJECT_DIR$/giamesoft/WS-Raster-ContourHorizontal.go" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/_old/Path0_Line_Simple.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/giamegl43/gl.go" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/PR-Scanline-horizontal.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Uniform.cs.glsl" />
+        <option value="$PROJECT_DIR$/Filler-Kinds.go" />
+        <option value="$PROJECT_DIR$/Filler.go" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bell.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Fixed.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Repeat.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_NearestNeighbor.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bilinear.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Hermite.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_BicubicHalf.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos2.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Lanczos3.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_MitchellOneThird.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/giamegl43/Context.go" />
+        <option value="$PROJECT_DIR$/giamegl/shaders/RS_Repeat.cs.glsl" />
+        <option value="$PROJECT_DIR$/giamegl/giamegl43/Result.go" />
+        <option value="$PROJECT_DIR$/ex/example/temp" />
+        <option value="$PROJECT_DIR$/ex/example/util.py" />
+        <option value="$PROJECT_DIR$/../gumi/gcore/color.go" />
+        <option value="$PROJECT_DIR$/ex/ex0.go" />
+        <option value="$PROJECT_DIR$/Contour-Util.go" />
+        <option value="$PROJECT_DIR$/Contour-ScanlineHorizontal.go" />
+        <option value="$PROJECT_DIR$/Contour-ScanlineVertical.go" />
       </list>
     </option>
   </component>
@@ -134,16 +274,16 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="570" />
-    <option name="y" value="20" />
-    <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,50 +291,35 @@
               <item name="giame" type="b2602c69:ProjectViewProjectNode" />
               <item name="giame" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="giame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="giame" type="462c0819:PsiDirectoryNode" />
-              <item name="giamegl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="giame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="giame" type="462c0819:PsiDirectoryNode" />
-              <item name="giamesoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="giame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="giame" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/GUMI env/src/github.com/GUMI-golang/giame/pathtool.go" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gumi-basic" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl\shaders" />
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl\shaders\old" />
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\tools\svg" />
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl" />
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\tools" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame" />
       <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl\shaders" />
       <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\ex\example" />
       <recent name="F:\giame\ex\example" />
       <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl\giamegl44" />
-      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\shaders" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\giamegl" />
-      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\tools" />
-      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\ex\example" />
-      <recent name="C:\GUMI env\src\github.com\GUMI-golang\giame\shaders" />
-      <recent name="F:\giame\ex\example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,21 +344,12 @@
       <package value="github.com/GUMI-golang/gst" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="ex1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+    <configuration name="go build WS-Raster-ContourHorizontal.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="giame" />
-      <working_directory value="$PROJECT_DIR$/ex/" />
+      <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/ex/ex1.go" />
-      <package value="github.com/GUMI-golang/gst" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="ex2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="giame" />
-      <working_directory value="C:\GUMI env\src\github.com\GUMI-golang\giame\ex" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/ex/ex2.go" />
+      <filePath value="$PROJECT_DIR$/giamesoft/WS-Raster-ContourHorizontal.go" />
       <package value="github.com/GUMI-golang/gst" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
@@ -246,21 +362,21 @@
       <package value="github.com/GUMI-golang/gst" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
+    <configuration name="go build ex1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="giame" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/ex/ex1.go" />
+      <package value="github.com/GUMI-golang/gst" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
     <configuration name="go build ex3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="giame" />
       <working_directory value="C:\GUMI env\src\github.com\GUMI-golang\giame\ex" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/ex/ex3.go" />
-      <package value="github.com/GUMI-golang/gst" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build gen.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="giame" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/ex/gen.go" />
       <package value="github.com/GUMI-golang/gst" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
@@ -274,22 +390,54 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
     </configuration>
+    <configuration name="util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="giame" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ex/example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex/example/util.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.ex1" />
       <item itemvalue="Go Build.go build ex0.go" />
-      <item itemvalue="Go Build.go build gen.go" />
-      <item itemvalue="Go Build.ex2" />
       <item itemvalue="Go Build.go build ex3.go" />
+      <item itemvalue="Go Build.go build ex1.go" />
+      <item itemvalue="Go Build.go build WS-Raster-ContourHorizontal.go" />
+      <item itemvalue="Python.util" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build ex0.go" />
+        <item itemvalue="Python.util" />
         <item itemvalue="Go Build.go build ex3.go" />
-        <item itemvalue="Go Build.ex2" />
-        <item itemvalue="Go Build.go build gen.go" />
-        <item itemvalue="Go Build.ex1" />
+        <item itemvalue="Go Build.go build ex1.go" />
+        <item itemvalue="Go Build.go build WS-Raster-ContourHorizontal.go" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="go_test_github_com_GUMI-golang_giame - 2018.06.01 at 11h 45m 31s.xml">
+      <configuration name="go test github.com/GUMI-golang/giame" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_github_com_GUMI-golang_giame - 2018.06.01 at 11h 48m 47s.xml">
+      <configuration name="go test github.com/GUMI-golang/giame" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_github_com_GUMI-golang_giame - 2018.06.01 at 11h 49m 03s.xml">
+      <configuration name="go test github.com/GUMI-golang/giame" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_github_com_GUMI-golang_giame - 2018.06.01 at 11h 53m 50s.xml">
+      <configuration name="go test github.com/GUMI-golang/giame" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,51 +450,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18053691" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32905984" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49928674" visible="true" weight="0.1738255" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3281027" />
       <window_info anchor="bottom" id="Statistic" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067115" side_tool="true" weight="0.42022792" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5013423" side_tool="true" weight="0.41880342" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49932885" weight="0.42022792" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32952926" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4986577" weight="0.40228245" />
+      <window_info id="Structure" order="2" sideWeight="0.5007133" side_tool="true" weight="0.20134228" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.8504273" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.45584047" />
+      <window_info id="Favorites" order="0" sideWeight="0.5007133" side_tool="true" weight="0.20134228" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4507846" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.30813125" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21208054" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.32905984" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.42022792" />
-      <window_info anchor="bottom" id="Statistic" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32905984" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.45584047" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.8504273" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -355,91 +486,70 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/util-SerialReader.go</url>
-          <line>26</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/util-SerialReader.go</url>
-          <line>50</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/ex/ex1.go</url>
-          <line>157</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/ex/ex1.go</url>
-          <line>149</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/ex/ex1.go</url>
-          <line>123</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/ex/ex2.go</url>
+          <url />
           <line>120</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/tools/Filter.go</url>
+          <url />
           <line>69</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/tools/kernel/cases.go</url>
+          <url />
           <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url />
+          <line>25</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url />
+          <line>26</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url />
+          <line>23</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url />
+          <line>25</line>
+          <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="78" />
+      <option name="time" value="122" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
-        <watch expression="ty" language="go" />
-        <watch expression="sy" language="go" />
+        <watch expression="string(res)" language="go" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>sy</expression-string>
+        <expression-string>string(res)</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ty</expression-string>
+        <expression-string>string(v)</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>tx</expression-string>
+        <expression-string>x</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>off</expression-string>
-        <language-id>go</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>check</expression-string>
-        <language-id>go</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sum</expression-string>
-        <language-id>go</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>temp</expression-string>
+        <expression-string>b</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -449,319 +559,522 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>sx</expression-string>
+        <expression-string>to</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fi</expression-string>
+        <expression-string>from</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>y</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dir</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>end</expression-string>
         <language-id>go</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RawFiller.go">
+    <entry file="file://$PROJECT_DIR$/../gumi/gcore/fnString.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+        <state relative-caret-position="323">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#296#341#0" />
+            <element signature="e#412#458#0" />
+            <element signature="e#530#573#0" />
+            <element signature="e#646#831#0" />
+            <element signature="e#717#790#0" />
+            <element signature="e#1078#1157#1" />
+            <element signature="e#1217#1237#0" />
+            <element signature="e#1242#1366#0" />
+            <element signature="e#1316#1362#0" />
+            <element signature="e#1393#1448#0" />
+            <element signature="e#1415#1445#0" />
+            <element signature="e#1466#1515#0" />
+            <element signature="e#1549#1602#0" />
+            <element signature="e#1679#1758#0" />
+            <element signature="e#1731#1755#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/structs.go">
+    <entry file="file://$PROJECT_DIR$/tools/svg/Path.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="121">
+          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/svg/Path-Handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/svg/Parser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Query-SVGPath.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contour-Infomation.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Query-Fill.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex/ex1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gumi/gcore/scale.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gumi/gcore/util_capture.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamesoft/Workspace.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamesoft/WS-Filter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filler-Serializer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contour.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/giamesoft/software.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+        <state relative-caret-position="171">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/common.go">
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/_old/Path0_Line_Simple.cs.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="380">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/Resampler.go">
+    <entry file="file://$PROJECT_DIR$/ex/ex3.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+        <state relative-caret-position="418">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ex/ex2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/gst_Raster_Fixed.cs.glsl" />
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/gst_Raster_Repeat.cs.glsl" />
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/names.go" />
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/gst_Raster_Gaussian.cs.glsl" />
-    <entry file="file://$PROJECT_DIR$/tools/kernel/inplements.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="124" column="12" lean-forward="true" selection-start-line="118" selection-start-column="4" selection-end-line="124" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Font.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/gst_Pipe_NearestNeighbor.cs.glsl" />
-    <entry file="file://C:/Go/src/math/const.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Fixed.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/encoding/binary/binary.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-923">
-          <caret line="263" column="12" selection-start-line="263" selection-start-column="12" selection-end-line="263" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Uniform.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bell.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="49" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_BicubicHalf.cs.glsl">
+    <entry file="file://$PROJECT_DIR$/giamesoft/DST_Filler.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="50" selection-end-column="87" />
+          <caret line="9" column="83" lean-forward="true" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Bilinear.cs.glsl">
+    <entry file="file://$PROJECT_DIR$/giamesoft/WS-Raster-ContourHorizontal.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="48" column="87" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
+        <state relative-caret-position="285">
+          <caret line="36" column="44" lean-forward="true" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Hermite.cs.glsl">
+    <entry file="file://$PROJECT_DIR$/Interface.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
+        <state relative-caret-position="198">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos2.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="50" column="87" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_Lanczos3.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="50" column="87" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_MitchellOneThird.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="50" column="87" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Kernel_NearestNeighbor.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="48" column="87" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/assets.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/gst_Pipe_Bicubic.cs.glsl" />
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Raster_Repeat.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Pipe0_Downscale.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="14" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/mask/Mask.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/mask/Sharpening.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/Pipe1_Filter3x3.cs.glsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/Context.go">
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/_old/Path1_Fill.cs.glsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ContourDOM.go" />
-    <entry file="file://$PROJECT_DIR$/Contour.go">
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Uniform.cs.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+        <state relative-caret-position="114">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/Result.go">
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/PR-Scanline-horizontal.glsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="186" column="38" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
+        <state relative-caret-position="379">
+          <caret line="43" column="78" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Filler-Kinds.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/shaders/generate.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ex/ex0.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fillers.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="120" column="23" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../golang.org/x/image/webp/nycbcra/nycbcra.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../golang.org/x/image/webp/decode.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2565" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../golang.org/x/image/vector/acc_amd64.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../golang.org/x/image/riff/riff.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/image/image.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="150" column="10" selection-start-line="150" selection-start-column="3" selection-end-line="150" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/image/png/reader.go">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="370" column="8" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/gl.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/giamesoft/software.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/giamegl/shaders/structs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RawFiller.go">
+    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/gl.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+        <state relative-caret-position="518">
+          <caret line="161" column="88" lean-forward="true" selection-start-line="145" selection-start-column="4" selection-end-line="161" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="173" column="46" lean-forward="true" selection-start-line="173" selection-start-column="46" selection-end-line="174" selection-end-column="46" />
+          <folding>
+            <element signature="e#165#328#0" />
+            <element signature="e#401#464#0" />
+            <element signature="e#466#517#0" />
+            <element signature="e#519#585#0" />
+            <element signature="e#587#646#0" />
+            <element signature="e#648#703#0" />
+            <element signature="e#705#763#0" />
+            <element signature="e#765#827#0" />
+            <element signature="e#829#896#0" />
+            <element signature="e#898#957#0" />
+            <element signature="e#959#1018#0" />
+            <element signature="e#1020#1073#0" />
+            <element signature="e#1221#1259#0" />
+            <element signature="n#!!block;n#NewUniformFiller#0" />
+            <element signature="n#!!block;n#NewFixedFiller#0" />
+            <element signature="n#!!block;n#NewKernelFiller#0" />
+            <element signature="e#1786#2321#0" />
+            <element signature="e#1798#1867#0" />
+            <element signature="e#1869#1924#0" />
+            <element signature="e#1926#1973#0" />
+            <element signature="e#1975#2028#0" />
+            <element signature="e#2030#2091#0" />
+            <element signature="e#2093#2164#0" />
+            <element signature="e#2166#2221#0" />
+            <element signature="e#2223#2278#0" />
+            <element signature="e#2280#2318#0" />
+            <element signature="n#!!block;n#NewRepeatFiller#0" />
+            <element signature="n#!!block;n#NewRepeatHorizontalFiller#0" />
+            <element signature="n#!!block;n#NewRepeatVerticalFiller#0" />
+            <element signature="n#!!block;n#ParseFillertype#0" />
+            <element signature="n#!!block;n#Strings#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Fixed.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Bell.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_BicubicHalf.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Bilinear.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Hermite.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_NearestNeighbor.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Lanczos3.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_Lanczos2.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Kernel_MitchellOneThird.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/RS_Repeat.cs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/shaders/generate.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/Result.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="271" column="65" selection-start-line="271" selection-start-column="65" selection-end-line="271" selection-end-column="65" />
+          <folding>
+            <element signature="n#!!block;n#Clear#0" />
+            <element signature="n#!!block;n#Size#0" />
+            <element signature="n#!!block;n#Image#0" />
+            <element signature="e#979#1078#0" />
+            <element signature="n#!!block;n#Request#0" />
+            <element signature="e#1191#1220#0" />
+            <element signature="e#1247#1317#0" />
+            <element signature="e#1319#1358#0" />
+            <element signature="e#10140#10186#0" />
+            <element signature="e#10205#10349#0" />
+            <element signature="n#!!block;n#GLTex#0" />
+            <element signature="n#!!block;n#path_line_nomod#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/giamegl/giamegl43/Context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="106" column="31" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!block;n#MakeResult#0" />
+            <element signature="n#!!block;n#Init#0" />
+            <element signature="e#931#971#0" />
+            <element signature="e#1097#1197#0" />
+            <element signature="e#1215#1232#0" />
+            <element signature="n#!!block;n#Close#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/fileinput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex/example/temp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="148" lean-forward="true" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex/example/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="124" selection-start-line="9" selection-start-column="124" selection-end-line="9" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gumi/gcore/color.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="243" column="5" selection-start-line="243" selection-start-column="5" selection-end-line="243" selection-end-column="5" />
+          <folding>
+            <element signature="e#80#590#0" />
+            <element signature="e#665#6897#0" />
+            <element signature="n#!!block;n#sameUnder4Upper4#0" />
+            <element signature="n#!!block;n#MarshalColor#0" />
+            <element signature="e#7113#7322#0" />
+            <element signature="e#7189#7257#0" />
+            <element signature="e#7263#7319#0" />
+            <element signature="e#7328#7581#0" />
+            <element signature="e#7428#7508#0" />
+            <element signature="e#7514#7578#0" />
+            <element signature="n#!!block;n#UnmarshalColor#0" />
+            <element signature="e#7677#9162#0" />
+            <element signature="e#7740#8036#0" />
+            <element signature="e#7762#8027#0" />
+            <element signature="e#8099#8464#0" />
+            <element signature="e#8121#8455#0" />
+            <element signature="e#8529#8783#0" />
+            <element signature="e#8551#8774#0" />
+            <element signature="e#8850#9159#0" />
+            <element signature="e#8872#9150#0" />
+            <element signature="e#9167#9229#0" />
+            <element signature="e#9204#9226#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gumi/gcore/fnString.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#296#341#0" />
+            <element signature="e#412#458#0" />
+            <element signature="e#530#573#0" />
+            <element signature="e#646#831#0" />
+            <element signature="e#717#790#0" />
+            <element signature="e#1078#1157#1" />
+            <element signature="e#1217#1237#0" />
+            <element signature="e#1242#1366#0" />
+            <element signature="e#1316#1362#0" />
+            <element signature="e#1393#1448#0" />
+            <element signature="e#1415#1445#0" />
+            <element signature="e#1466#1515#0" />
+            <element signature="e#1549#1602#0" />
+            <element signature="e#1679#1758#0" />
+            <element signature="e#1731#1755#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex/_out.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Query.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ex/ex0.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contour-Util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contour-ScanlineVertical.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#118#173#0" />
+            <element signature="n#!!block;n#ToContourVertical#0" />
+            <element signature="e#322#458#0" />
+            <element signature="e#404#421#0" />
+            <element signature="e#427#455#0" />
+            <element signature="e#579#672#0" />
+            <element signature="n#!!block;n#NewBuilderContourVertical#0" />
+            <element signature="e#769#946#0" />
+            <element signature="e#843#889#0" />
+            <element signature="n#!!block;n#Write#0" />
+            <element signature="e#1057#1099#0" />
+            <element signature="e#1209#1222#0" />
+            <element signature="e#1383#1664#0" />
+            <element signature="e#1439#1456#0" />
+            <element signature="e#1524#1541#0" />
+            <element signature="e#1568#1621#0" />
+            <element signature="e#1626#1660#0" />
+            <element signature="n#!!block;n#Build#0" />
+            <element signature="e#1887#1999#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contour-ScanlineHorizontal.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+          <folding>
+            <element signature="e#124#179#0" />
+            <element signature="n#!!block;n#ToContourHorizontal#0" />
+            <element signature="n#!!block;n#Build#0" />
+          </folding>
         </state>
       </provider>
     </entry>

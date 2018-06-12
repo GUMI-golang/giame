@@ -13,6 +13,6 @@ type (
 		Size() (w, h int)
 		Image() image.Image
 		Clear()
-		Request(dr Driver, rq *Contour)
+		Request(dr Driver, rq Contour)
 	}
 )
